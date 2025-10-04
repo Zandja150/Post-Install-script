@@ -98,7 +98,7 @@ $SUDO docker compose version | tee -a "$LOG_FILE"
 
 # 14. adds the user to the 'docker' group
 echo -e "\n>>> Adding user '$USER' to the 'docker' group" | tee -a "$LOG_FILE"
-$SUDO usermod -aG docker "$USER" | tee -a "$LOG_FILE"
+$SUDO usermod -aG docker $USER | tee -a "$LOG_FILE"
 
 # 15. Displays finished ascii art
 echo " ___________.___ _______  .___  _________ ___ ______________________    "
