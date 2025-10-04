@@ -91,10 +91,10 @@ echo -e "\n>>> Installing Docker Compose (Plugin version)" | tee -a "$LOG_FILE"
 $SUDO apt install docker-compose-plugin -y | tee -a "$LOG_FILE"
 
 # 13. Verify Docker & Compose Installations
-echo -e "\n>>> Verifying Docker Installation" | tee -a "$LOG_FILE"
-$SUDO docker --version | tee -a "$LOG_FILE"
-echo -e "\n>>> Verifying Docker Compose Installation" | tee -a "$LOG_FILE"
-$SUDO docker compose version | tee -a "$LOG_FILE"
+#echo -e "\n>>> Verifying Docker Installation" | tee -a "$LOG_FILE"
+#$SUDO docker --version | tee -a "$LOG_FILE"
+#echo -e "\n>>> Verifying Docker Compose Installation" | tee -a "$LOG_FILE"
+#$SUDO docker compose version | tee -a "$LOG_FILE"
 
 # 15. Displays finished ascii art
 echo " ___________.___ _______  .___  _________ ___ ______________________    "
