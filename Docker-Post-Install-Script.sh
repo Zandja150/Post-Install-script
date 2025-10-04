@@ -106,7 +106,7 @@ echo "      \/                \/            \/       \/        \/         \/  "
 echo ""
 echo ""
 echo " !! Once Completed run 'sudo usermod -aG docker $USER' !!"
-Echo "              !!  Reboot Once complete !!                "
+echo "              !!  Reboot Once complete !!                "
 
 
 
