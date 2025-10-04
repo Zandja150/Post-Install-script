@@ -105,8 +105,9 @@ echo "  \___  /   |___\____|__  /___/_______  /\___|_  /_______  //_______  / "
 echo "      \/                \/            \/       \/        \/         \/  "
 echo ""
 echo ""
-echo " !! Once Completed run 'sudo usermod -aG docker $USER' !!"
-echo "              !!  Reboot Once complete !!                "
+echo "IMPORTANT: A REBOOT is required for Docker permissions to apply correctly."
+echo "You have been added to the 'docker' group, but you must log out and back in or reboot."
+echo "Suggested command: sudo reboot | If in a VM Restart the VM through the Hypervisor"              "
 
 
 
