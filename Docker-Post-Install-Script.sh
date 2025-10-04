@@ -96,10 +96,6 @@ $SUDO docker --version | tee -a "$LOG_FILE"
 echo -e "\n>>> Verifying Docker Compose Installation" | tee -a "$LOG_FILE"
 $SUDO docker compose version | tee -a "$LOG_FILE"
 
-# 14. adds the user to the 'docker' group
-echo -e "\n>>> Adding user '$USER' to the 'docker' group" | tee -a "$LOG_FILE"
-$SUDO usermod -aG docker $USER | tee -a "$LOG_FILE"
-
 # 15. Displays finished ascii art
 echo " ___________.___ _______  .___  _________ ___ ______________________    "
 echo " \_   _____/|   |\      \ |   |/   _____//   |   \_   _____/\______ \   "
@@ -107,3 +103,10 @@ echo "  |    __)  |   |/   |   \|   |\_____  \/    ~    \    __)_  |    |  \  "
 echo "  |     \   |   /    |    \   |/        \    Y    /        \ |    '   \ "
 echo "  \___  /   |___\____|__  /___/_______  /\___|_  /_______  //_______  / "
 echo "      \/                \/            \/       \/        \/         \/  "
+echo ""
+echo ""
+echo " !! Once Completed run 'sudo usermod -aG docker $USER' !!"
+Echo "              !!  Reboot Once complete !!                "
+
+
+
