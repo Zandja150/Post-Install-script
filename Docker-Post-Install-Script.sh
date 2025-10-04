@@ -96,10 +96,6 @@ $SUDO docker --version | tee -a "$LOG_FILE"
 echo -e "\n>>> Verifying Docker Compose Installation" | tee -a "$LOG_FILE"
 $SUDO docker compose version | tee -a "$LOG_FILE"
 
-$SUDO newgrp docker | tee -a "$LOG_FILE"
-
-$SUDO usermod -aG docker $USER | tee -a "$LOG_FILE"
-
 # 15. Displays finished ascii art
 echo " ___________.___ _______  .___  _________ ___ ______________________    "
 echo " \_   _____/|   |\      \ |   |/   _____//   |   \_   _____/\______ \   "
